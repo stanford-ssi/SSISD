@@ -1,11 +1,3 @@
-/*
- * Code generated from Atmel Start.
- *
- * This file will be overwritten when reconfiguring your Atmel Start project.
- * Please copy examples or other code you want to keep to a separate file or main.c
- * to avoid loosing it when reconfiguring.
- */
-
 #include "fatfs_main.h"
 
 /**
@@ -27,12 +19,8 @@
  *
  * \return Current time.
  */
+
 DWORD get_fattime(void)
 {
 	return 0;
-}
-
-void fatfs_app_init(void)
-{
-	/*Low layer module initialisation to be added*/
 }
