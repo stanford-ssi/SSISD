@@ -11,6 +11,18 @@
 #define SD_DAT3 GPIO(GPIO_PORTB, 10)
 #define SD_CLK GPIO(GPIO_PORTB, 11)
 
+/* Card Detect (CD) pin settings */
+static sd_mmc_detect_t SDMMC_ACCESS_0_cd[CONF_SD_MMC_MEM_CNT] = {
+
+    {-1, CONF_SD_MMC_0_CD_DETECT_VALUE},
+};
+
+/* Write Protect (WP) pin settings */
+static sd_mmc_detect_t SDMMC_ACCESS_0_wp[CONF_SD_MMC_MEM_CNT] = {
+
+    {-1, CONF_SD_MMC_0_WP_DETECT_VALUE},
+};
+
 void SSISD::init(){
 
 	hri_mclk_set_AHBMASK_SDHC0_bit(MCLK);
