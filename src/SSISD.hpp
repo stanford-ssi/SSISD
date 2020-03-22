@@ -1,6 +1,6 @@
 #pragma once
 
-#include "FatFs\source\ff.h"
+#include "FatFs/source/ff.h"
 
 #include "hal/include/hal_mci_sync.h"
 
