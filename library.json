@@ -3,16 +3,15 @@
     "build":{
         "flags":
         [
-            "-Idiskio",
-            "-Isd_mmc",
-            "-IFatFs/source",
-            "-Imisc",
-            "-Iinclude",
-            "-Idfp/include",
-            "-Ihri",
-            "-Ihal/include",
-            "-Ihpl/port",
-            "-Ihal/utils/include"
+            "-Isrc/diskio",
+            "-Isrc/sd_mmc",
+            "-Isrc/FatFs/source",
+            "-Isrc/misc",
+            "-Isrc/include",
+            "-Isrc/hri",
+            "-Isrc/hal/include",
+            "-Isrc/hpl/port",
+            "-Isrc/hal/utils/include"
         ],
         "libArchive": false
     }

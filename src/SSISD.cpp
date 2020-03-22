@@ -4,6 +4,9 @@
 #include "hpl_sdhc_config.h"
 #include "hal_gpio.h"
 
+#include "hal_mci_sync.h"
+#include "sd_mmc.h"
+
 #define SD_CMD GPIO(GPIO_PORTA, 8)
 #define SD_DAT0 GPIO(GPIO_PORTA, 9)
 #define SD_DAT1 GPIO(GPIO_PORTA, 10)
@@ -24,6 +27,8 @@ static sd_mmc_detect_t SDMMC_ACCESS_0_wp[CONF_SD_MMC_MEM_CNT] = {
 };
 
 void SSISD::init(){
+
+	struct mci_sync_desc MCI_0;
 
 	hri_mclk_set_AHBMASK_SDHC0_bit(MCLK);
 	hri_gclk_write_PCHCTRL_reg(GCLK, SDHC0_GCLK_ID, CONF_GCLK_SDHC0_SRC | (1 << GCLK_PCHCTRL_CHEN_Pos));
