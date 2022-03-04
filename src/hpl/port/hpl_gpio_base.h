@@ -167,4 +167,5 @@ static inline void _port_event_init()
 {
 	hri_port_set_EVCTRL_reg(PORT, 0, CONF_PORTA_EVCTRL);
 	hri_port_set_EVCTRL_reg(PORT, 1, CONF_PORTB_EVCTRL);
+	hri_port_set_EVCTRL_reg(PORT, 2, CONF_PORTC_EVCTRL);
 }
