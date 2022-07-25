@@ -7,8 +7,6 @@
             "-Isrc/sd_mmc",
             "-Isrc/FatFs/source",
             "-Isrc/misc",
-            "-Isrc/include",
-            "-Isrc/hri",
             "-Isrc/hal/include",
             "-Isrc/hpl/port",
             "-Isrc/hal/utils/include"
